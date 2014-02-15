@@ -120,12 +120,12 @@ exports.PlanFile = function(filename) {
 		var s = '';
 		if (backwards) {
 			for (var j = 0; j < 8; j++) {
-				s = ((v % 2 == 1) ? 'l' : '0') + s;
+				s = ((v % 2 == 1) ? '1' : '0') + s;
 				v = v >>> 1;
 			}
 		} else {
 			for (var j = 0; j < 8; j++) {
-				s += (v % 2 == 1) ? 'l' : '0';
+				s += (v % 2 == 1) ? '1' : '0';
 				v = v >>> 1;
 			}
 		}
