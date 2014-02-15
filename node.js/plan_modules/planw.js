@@ -61,7 +61,7 @@ exports.decodePlan = function (filename, outputFile) {
 			f.readBinDump(header.blockSize2, true)
 		];
 	}
-	planUtils.exportTSV(outputFile, '2', list2, 'w2_id,unknown1');
+	planUtils.exportTSV(outputFile, '2', list2, 'w2_id,bitcalendar');
 	
 	
 	
